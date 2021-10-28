@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: auto;
+}
+header, section, div{
+    height: 100vh;
+    display: flex;
+}
+header{
+    background:linear-gradient( rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.836) ), url("image/bg-2.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    flex-direction: column;
+    color: whitesmoke;
+    
+}
+.nav-icon{
+    margin: 15px 50px;
+    flex: 1;
+    font-size: 1.5rem;
+    position: fixed;
+}
+.nav-icon a{    
+    color: rgb(235, 200, 0);
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.733);
+    border: 1px solid yellow;
+    padding: 10px;
+    
+}
+.nav-icon a:hover{  
+    background-color: rgb(235, 200, 0);  
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.intro{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-size: 12px;
+    justify-content: center;
+    flex-basis: auto;
+}
+.nav-extra{
+    flex: 1.2;
+}
+.nav-media{
+    flex: 2;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.intro h1{
+    font-size: 6em;
+}
+.intro h5{
+    font-size: 2em;
+    color: rgb(235, 200, 0);
+}
+.intro p{
+    font-family: Times;
+    font-size: 1.5em;
+    letter-spacing: .2rem;
+    line-height: 2.4rem;
+}
+header .intro h1, h5, p{
+    flex-basis: auto;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.intro p span:first-child::before,span::after{
+    
+    padding: 10px;
+    margin: 0;
+    content: "|";
+    color: rgb(235, 200, 0);
+}
+.intro a{
+    background-color: transparent ;
+    border: 2px solid rgba(235, 200, 0, 0.452);
+    color: whitesmoke;
+    padding: 15px 30px;
+    margin-top: 30px;
+    letter-spacing: 0.2rem;
+    
+}
+.intro a:hover{
+    border: 2px solid rgb(235, 200, 0);
+}
+.nav-media ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.nav-media ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 1.5rem;
+    
+}
+.nav-media ul a{
+    color: whitesmoke;
+    /* font-weight: ; */
+}
+.nav-media a:hover{
+    color: rgb(255, 217, 0);
+}
+footer{
+    height: 50vh;
+    background-color: rgb(32, 32, 32);
+}
